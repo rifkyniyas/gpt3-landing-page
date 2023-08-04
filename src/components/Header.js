@@ -1,15 +1,15 @@
 import Image from "next/image";
 const Header = () => {
   return (
-    <header className="flex items-center justify-between max-w-6xl mx-auto">
+    <header className="main-container flex items-center justify-between">
+      <div></div>
       <a href="/" className="relative h-4 w-16">
         <Image src="/images/logo.svg" fill={true} />
       </a>
       <nav>
         <ul className="flex items-center">
           <li>
-            <a href=""></a>
-            Home
+            <a href="#">Home</a>
           </li>
           <li>
             <a href="#">What is GPT?</a>

@@ -9,12 +9,14 @@ module.exports = {
     extend: {
       colors: {
         primary: "#FF4820",
+        "gradient-from": "#AE67FA",
+        "gradient-to": "F49867",
+        "blue-text": "#81AFDD",
+        "dark-blue": "#052D56",
         dark: "#040C18",
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "main-gradient": "linear-gradient(90deg, #AE67FA 0%, #F49867 97.40%)",
       },
     },
   },
