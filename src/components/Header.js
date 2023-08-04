@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Header = () => {
   return (
-    <header className="flex items-center max-w-6xl mx-auto">
+    <header className="flex items-center justify-between max-w-6xl mx-auto">
       <a href="/" className="relative h-4 w-16">
         <Image src="/images/logo.svg" fill={true} />
       </a>
