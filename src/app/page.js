@@ -18,7 +18,7 @@ export default function Home() {
             type="email"
             placeholder="Your Email Address"
             required
-            className="bg-dark-blue rounded-t-md rounded-l-md outline-none px-8 py-6 text-xl"
+            className="bg-dark-blue rounded-t-md rounded-l-md grow outline-none px-8 py-6 text-xl"
           />
           <button
             type="submit"
@@ -32,7 +32,7 @@ export default function Home() {
             <Image
               src="/images/used-by.png"
               fill={true}
-              className="object-contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
           <p className="text-xs font-medium">
