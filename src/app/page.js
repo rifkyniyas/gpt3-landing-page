@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <div className="main-container py-32 grid grid-cols-1 lg:grid-cols-2">
-        <section>
+      <div className="main-container pt-10 pb-24 lg:py-32 grid gap-y-10 grid-cols-1 lg:grid-cols-2">
+        <section className="order-last lg:order-first">
           <h1 className="bg-main-gradient bg-clip-text text-transparent font-extrabold text-6xl mb-8">
             Let’s Build Something amazing with GPT-3 OpenAI
           </h1>
@@ -21,11 +21,11 @@ export default function Home() {
               type="email"
               placeholder="Your Email Address"
               required
-              className="bg-dark-blue rounded-t-md rounded-l-md grow outline-none px-8 py-6 text-xl"
+              className="bg-dark-blue rounded-none rounded-t-md rounded-l-md lg:grow outline-none px-6 py-4 lg:px-8 lg:py-6 lg:text-xl"
             />
             <button
               type="submit"
-              className="bg-primary text-xl font-bold text-white px-9 py-5"
+              className="bg-primary text-xl font-bold text-white px-6 py-4 lg:px-9 lg:py-5"
             >
               Get Started
             </button>
@@ -43,31 +43,35 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <figure className="relative">
-          <Image src="/images/hero-image.jpg" fill={true} />
+        <figure className="relative min-h-[250px]">
+          <Image
+            src="/images/hero-img.jpg"
+            fill={true}
+            style={{ objectFit: "contain" }}
+          />
         </figure>
       </div>
       {/* Companies Section */}
-      <div className="max-w-2xl mx-auto mb-32 flex items-center gap-x-12">
-        <figure className="relative h-6 w-32">
+      <div className="max-w-2xl mx-auto mb-32 flex flex-wrap lg:flex-nowrap justify-center items-center gap-y-10 gap-x-12">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/google-logo.svg" fill={true} />
         </figure>
-        <figure className="relative h-6 w-32">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/slack-logo.svg" fill={true} />
         </figure>
-        <figure className="relative h-6 w-32">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/atlassian-logo.svg" fill={true} />
         </figure>
-        <figure className="relative h-6 w-32">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/dropbox-logo.svg" fill={true} />
         </figure>
-        <figure className="relative h-6 w-32">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/shopify-logo.svg" fill={true} />
         </figure>
       </div>
       {/* What is GPT-3 */}
       <div className="main-container mb-52 p-16 bg-blue-bg">
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-x-40">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-5">
           <h2 className="min-w-fit text-2xl font-extrabold grow">
             <span className="block h-1 w-10 bg-main-gradient mb-4"></span>
             What is GPT-3
@@ -80,7 +84,7 @@ export default function Home() {
             on by.
           </p>
         </section>
-        <section className="flex justify-between items-center py-24">
+        <section className="flex flex-col lg:flex-row justify-between lg:items-center py-24 gap-y-6">
           <h2 className="max-w-md text-4xl font-extrabold text-transparent bg-main-gradient bg-clip-text">
             The possibilities are beyond your imagination
           </h2>
@@ -88,7 +92,7 @@ export default function Home() {
             Explore The Library
           </a>
         </section>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-11">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-11 gap-y-12">
           <article>
             <h3 className="text-2xl font-extrabold mb-8">
               <span className="block h-1 w-10 bg-main-gradient mb-4"></span>
@@ -122,7 +126,7 @@ export default function Home() {
         </div>
       </div>
       {/* Features section */}
-      <div className="main-container mb-32 grid grid-cols-1 lg:grid-cols-2 gap-x-36">
+      <div className="main-container mb-32 grid grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-36">
         <section>
           <h2 className="text-4xl font-extrabold text-transparent bg-main-gradient bg-clip-text mb-9">
             The Future is Now and You Just Need To Realize It. Step into Future
@@ -178,14 +182,18 @@ export default function Home() {
         </div>
       </div>
       {/* Feature section */}
-      <div className="main-container mb-40 grid grid-cols-1 lg:grid-cols-2 gap-x-36">
-        <figure className="relative">
-          <Image src="/images/hero-image.jpg" fill={true} />
+      <div className="main-container mb-40 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-36">
+        <figure className="relative min-h-[250px]">
+          <Image
+            src="/images/feature-img.jpg"
+            fill={true}
+            style={{ objectFit: "cover" }}
+          />
         </figure>
         <section>
-          <a href="#" className="block font-medium text-light-blue mb-3">
+          <p className="block font-medium text-light-blue mb-3">
             Request Early Access to Get Started
-          </a>
+          </p>
           <h2 className="text-4xl mb-6 font-extrabold bg-main-gradient bg-clip-text text-transparent">
             The possibilities are beyond your imagination
           </h2>
@@ -201,7 +209,7 @@ export default function Home() {
         </section>
       </div>
       {/* CTA section */}
-      <div className="main-container mb-40 p-12 flex justify-between items-center bg-main-gradient rounded-md">
+      <div className="main-container mb-40 p-12 flex flex-col md:flex-row gap-y-8 justify-between lg:items-center bg-main-gradient rounded-md">
         <div>
           <p className="text-xs font-medium text-[#0E0E0E] mb-3">
             Request Early Access to Get Started
@@ -212,7 +220,7 @@ export default function Home() {
         </div>
         <a
           href="#"
-          className="bg-black px-12 py-4 rounded-full text-lg font-bold"
+          className=" bg-black hover:no-underline px-12 py-4 rounded-full text-lg font-bold"
         >
           Get Started
         </a>
