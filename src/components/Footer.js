@@ -7,7 +7,10 @@ const Footer = () => {
         <h2 className="text-6xl mb-16 text-center font-extrabold text-transparent bg-main-gradient bg-clip-text">
           Do you want to step in to the future before others?
         </h2>
-        <a href="#" className="text-lg px-6 rounded py-5 border border-white">
+        <a
+          href="#"
+          className="text-lg hover:no-underline px-6 rounded py-5 border border-white"
+        >
           Request Early Access
         </a>
       </section>

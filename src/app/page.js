@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <div className="main-container py-20 lg:py-32 grid grid-cols-1 lg:grid-cols-2">
-        <section>
+      <div className="main-container pt-10 pb-24 lg:py-32 grid gap-y-10 grid-cols-1 lg:grid-cols-2">
+        <section className="order-last lg:order-first">
           <h1 className="bg-main-gradient bg-clip-text text-transparent font-extrabold text-6xl mb-8">
             Let’s Build Something amazing with GPT-3 OpenAI
           </h1>
@@ -43,25 +43,29 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <figure className="relative">
-          <Image src="/images/hero-image.jpg" fill={true} />
+        <figure className="relative min-h-[250px]">
+          <Image
+            src="/images/hero-img.jpg"
+            fill={true}
+            style={{ objectFit: "contain" }}
+          />
         </figure>
       </div>
       {/* Companies Section */}
-      <div className="max-w-2xl mx-auto mb-32 flex flex-wrap justify-center items-center gap-y-10 gap-x-12">
-        <figure className="relative h-6 w-32 basis-1/4 lg:basis-1/5">
+      <div className="max-w-2xl mx-auto mb-32 flex flex-wrap lg:flex-nowrap justify-center items-center gap-y-10 gap-x-12">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/google-logo.svg" fill={true} />
         </figure>
-        <figure className="relative h-6 w-32 basis-1/4 lg:basis-1/5">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/slack-logo.svg" fill={true} />
         </figure>
-        <figure className="relative h-6 w-32 basis-1/4 lg:basis-1/5">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/atlassian-logo.svg" fill={true} />
         </figure>
-        <figure className="relative h-6 w-32 basis-1/4 lg:basis-1/5">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/dropbox-logo.svg" fill={true} />
         </figure>
-        <figure className="relative h-6 w-32 basis-1/4 lg:basis-1/5">
+        <figure className="relative h-6 w-32 basis-1/4 lg:basis-auto">
           <Image src="/images/shopify-logo.svg" fill={true} />
         </figure>
       </div>
@@ -178,9 +182,13 @@ export default function Home() {
         </div>
       </div>
       {/* Feature section */}
-      <div className="main-container mb-40 grid grid-cols-1 lg:grid-cols-2 gap-x-36">
-        <figure className="relative">
-          <Image src="/images/hero-image.jpg" fill={true} />
+      <div className="main-container mb-40 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-36">
+        <figure className="relative min-h-[250px]">
+          <Image
+            src="/images/feature-img.jpg"
+            fill={true}
+            style={{ objectFit: "cover" }}
+          />
         </figure>
         <section>
           <p className="block font-medium text-light-blue mb-3">
@@ -212,7 +220,7 @@ export default function Home() {
         </div>
         <a
           href="#"
-          className=" bg-black px-12 py-4 rounded-full text-lg font-bold"
+          className=" bg-black hover:no-underline px-12 py-4 rounded-full text-lg font-bold"
         >
           Get Started
         </a>
