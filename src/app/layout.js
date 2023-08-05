@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Manrope } from "next/font/google";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className={`${manrope.className} bg-dark text-white`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
