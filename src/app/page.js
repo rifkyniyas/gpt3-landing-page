@@ -47,7 +47,7 @@ export default function Home() {
         </figure>
       </div>
       {/* Companies Section */}
-      <div className="max-w-2xl mx-auto flex items-center gap-x-12">
+      <div className="max-w-2xl mx-auto mb-32 flex items-center gap-x-12">
         <figure className="relative h-6 w-32">
           <Image src="/images/google-logo.svg" fill={true} />
         </figure>
@@ -64,7 +64,118 @@ export default function Home() {
           <Image src="/images/shopify-logo.svg" fill={true} />
         </figure>
       </div>
-      <div className="main-container my-32"></div>
+      {/* What is GPT-3 */}
+      <div className="main-container mb-52 p-16 bg-blue-bg">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-x-40">
+          <h2 className="min-w-fit text-2xl font-extrabold grow">
+            <span className="block h-1 w-10 bg-main-gradient mb-4"></span>
+            What is GPT-3
+          </h2>
+          <p className="font-medium text-blue-text">
+            We so opinion friends me message as delight. Whole front do of plate
+            heard oh ought. His defective nor convinced residence own.
+            Connection has put impossible own apartments boisterous. At jointure
+            ladyship an insisted so humanity he. Friendly bachelor entrance to
+            on by.
+          </p>
+        </section>
+        <section className="flex justify-between items-center py-24">
+          <h2 className="max-w-md text-4xl font-extrabold text-transparent bg-main-gradient bg-clip-text">
+            The possibilities are beyond your imagination
+          </h2>
+          <a href="#" className="font-medium text-orange-text">
+            Explore The Library
+          </a>
+        </section>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-11">
+          <article>
+            <h3 className="text-2xl font-extrabold mb-8">
+              <span className="block h-1 w-10 bg-main-gradient mb-4"></span>
+              Chatbots
+            </h3>
+            <p className="text-blue-text font-medium">
+              We so opinion friends me message as delight. Whole front do of
+              plate heard oh ought.
+            </p>
+          </article>
+          <article>
+            <h3 className="text-2xl font-extrabold mb-8">
+              <span className="block h-1 w-10 bg-main-gradient mb-4"></span>
+              Knowledgebase
+            </h3>
+            <p className="text-blue-text font-medium">
+              At jointure ladyship an insisted so humanity he. Friendly bachelor
+              entrance to on by. As put impossible own apartments b
+            </p>
+          </article>
+          <article>
+            <h3 className="text-2xl font-extrabold mb-8">
+              <span className="block h-1 w-10 bg-main-gradient mb-4"></span>
+              Education
+            </h3>
+            <p className="text-blue-text font-medium">
+              At jointure ladyship an insisted so humanity he. Friendly bachelor
+              entrance to on by. As put impossible own apartments b
+            </p>
+          </article>
+        </div>
+      </div>
+      {/* Features section */}
+      <div className="main-container mb-32 grid grid-cols-1 lg:grid-cols-2 gap-x-36">
+        <section>
+          <h2 className="text-4xl font-extrabold text-transparent bg-main-gradient bg-clip-text mb-9">
+            The Future is Now and You Just Need To Realize It. Step into Future
+            Today & Make it Happen.
+          </h2>
+          <a href="#" className="text-orange-text font-medium">
+            Request Early Access to Get Started
+          </a>
+        </section>
+        <div className="flex flex-col gap-y-14">
+          <article className="flex justify-between gap-x-20">
+            <h3 className="text-lg font-extrabold min-w-[150px]">
+              <span className="block h-1 w-10 bg-main-gradient mb-2"></span>
+              Improving end distrusts instantly
+            </h3>
+            <p className="text-blue-text text-sm font-medium">
+              From they fine john he give of rich he. They age and draw mrs
+              like. Improving end distrusts may instantly was household
+              applauded.
+            </p>
+          </article>
+          <article className="flex justify-between gap-x-20">
+            <h3 className="text-lg font-extrabold min-w-[150px]">
+              <span className="block h-1 w-10 bg-main-gradient mb-2"></span>
+              Become the tended active
+            </h3>
+            <p className="text-blue-text text-sm font-medium">
+              Considered sympathize ten uncommonly occasional assistance
+              sufficient not. Letter of on become he tended active enable to.
+            </p>
+          </article>
+          <article className="flex justify-between gap-x-20">
+            <h3 className="text-lg font-extrabold min-w-[150px]">
+              <span className="block h-1 w-10 bg-main-gradient mb-2"></span>
+              Message or am nothing
+            </h3>
+            <p className="text-blue-text text-sm font-medium">
+              Led ask possible mistress relation elegance eat likewise debating.
+              By message or am nothing amongst chiefly address.
+            </p>
+          </article>
+          <article className="flex justify-between gap-x-20">
+            <h3 className="text-lg font-extrabold min-w-[150px]">
+              <span className="block h-1 w-10 bg-main-gradient mb-2"></span>
+              Really boy law county
+            </h3>
+            <p className="text-blue-text text-sm font-medium">
+              Really boy law county she unable her sister. Feet you off its like
+              like six. Among sex are leave law built now. In built table in an
+              rapid blush.
+            </p>
+          </article>
+        </div>
+      </div>
     </main>
   );
 }
