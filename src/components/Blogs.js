@@ -3,7 +3,7 @@ import React from "react";
 
 const MainBlog = () => {
   return (
-    <article className="row-span-2 bg-blue-bg flex flex-col">
+    <article className="lg:row-span-2 bg-blue-bg flex flex-col">
       <figure className="relative w-auto h-72">
         <Image
           src="/images/blog-image-1.jpg"
@@ -54,7 +54,7 @@ const Blogs = () => {
       <h2 className="text-6xl font-extrabold mb-32 text-transparent bg-main-gradient bg-clip-text">
         A lot is happening, <br /> We are blogging about it.
       </h2>
-      <div className="grid grid-cols-3 grid-rows-2 gap-x-14 gap-y-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-x-14 gap-y-12">
         <MainBlog />
         <BlogItem />
         <BlogItem />

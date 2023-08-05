@@ -48,7 +48,7 @@ export default function Home() {
         </figure>
       </div>
       {/* Companies Section */}
-      <div className="max-w-2xl mx-auto mb-32 flex items-center gap-x-12">
+      <div className="max-w-2xl grid grid-cols-3 content-center justify-items-center  gap-y-5  mx-auto mb-32 lg:flex items-center gap-x-12">
         <figure className="relative h-6 w-32">
           <Image src="/images/google-logo.svg" fill={true} />
         </figure>

@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    a{
+     @apply hover:underline underline-offset-4   
+    }
+}
 @layer components {
     .main-container {
-        @apply max-w-6xl mx-auto;
+        @apply max-w-6xl mx-auto px-8;
     }
 }
