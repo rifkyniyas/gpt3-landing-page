@@ -51,7 +51,8 @@ const Header = () => {
           <li>
             <a
               href="#"
-              className="inline-block py-4 px-10 bg-primary hover:no-underline rounded-md"
+              className="inline-block py-4 px-10 bg-primary hover:no-underline rounded-md 
+               hover:bg-white hover:text-primary transition-colors duration-500"
             >
               Sign up
             </a>

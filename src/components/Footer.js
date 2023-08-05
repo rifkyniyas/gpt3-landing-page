@@ -9,7 +9,8 @@ const Footer = () => {
         </h2>
         <a
           href="#"
-          className="text-lg hover:no-underline px-6 rounded py-5 border border-white"
+          className="text-lg hover:no-underline px-6 rounded py-5 border border-white
+          hover:bg-white hover:text-primary transition-colors duration-500"
         >
           Request Early Access
         </a>

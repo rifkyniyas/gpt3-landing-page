@@ -25,7 +25,8 @@ export default function Home() {
             />
             <button
               type="submit"
-              className="bg-primary text-xl font-bold text-white px-6 py-4 lg:px-9 lg:py-5"
+              className="bg-primary text-xl rounded-none rounded-r-md font-bold text-white px-6 py-4 lg:px-9 lg:py-5
+              hover:bg-white hover:text-primary transition-colors duration-500"
             >
               Get Started
             </button>
@@ -220,7 +221,8 @@ export default function Home() {
         </div>
         <a
           href="#"
-          className=" bg-black hover:no-underline px-12 py-4 rounded-full text-lg font-bold"
+          className=" bg-black hover:no-underline px-12 py-4 rounded-full text-lg font-bold
+          hover:bg-white hover:text-primary transition-colors duration-500"
         >
           Get Started
         </a>
