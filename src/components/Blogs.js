@@ -17,7 +17,7 @@ const MainBlog = () => {
           GPT-3 and Open AI is the future. Let us exlore how it is?
         </h3>
 
-        <a href="#" className="block mt-auto mb-6 text-xs font-bold">
+        <a href="#" className="block mt-8 lg:mt-auto mb-6 text-xs font-bold">
           Read Full Article
         </a>
       </div>
@@ -54,7 +54,7 @@ const Blogs = () => {
       <h2 className="text-6xl font-extrabold mb-32 text-transparent bg-main-gradient bg-clip-text">
         A lot is happening, <br /> We are blogging about it.
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-x-14 gap-y-12">
+      <div className="grid grid-cols-1 grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 gap-x-14 gap-y-12">
         <MainBlog />
         <BlogItem />
         <BlogItem />

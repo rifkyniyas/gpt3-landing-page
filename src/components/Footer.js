@@ -70,11 +70,23 @@ const Footer = () => {
           <p>© 2021 GPT-3. All rights reserved.</p>
           <p className="mt-5 mb-2">
             <span>Developped by &nbsp;</span>
-            <a href="#">Rifky Niyas</a>
+            <a
+              href="https://rifkyniyas.vercel.app/"
+              target="_blank"
+              className="font-bold text-primary"
+            >
+              Rifky Niyas
+            </a>
           </p>
           <p>
             <span>Designed by &nbsp;</span>
-            <a href="#">A.R. Shakir</a>
+            <a
+              href="https://www.arshakir.com/"
+              target="_blank"
+              className="font-bold text-primary"
+            >
+              A.R. Shakir
+            </a>
           </p>
         </div>
       </div>
