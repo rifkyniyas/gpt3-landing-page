@@ -176,6 +176,46 @@ export default function Home() {
           </article>
         </div>
       </div>
+      {/* Feature section */}
+      <div className="main-container mb-40 grid grid-cols-1 lg:grid-cols-2 gap-x-36">
+        <figure className="relative">
+          <Image src="/images/hero-image.jpg" fill={true} />
+        </figure>
+        <section>
+          <a href="#" className="block font-medium text-light-blue mb-3">
+            Request Early Access to Get Started
+          </a>
+          <h2 className="text-4xl mb-6 font-extrabold bg-main-gradient bg-clip-text text-transparent">
+            The possibilities are beyond your imagination
+          </h2>
+          <p className="text-blue-text mb-8">
+            Yet bed any for travelling assistance indulgence unpleasing. Not
+            thoughts all exercise blessing. Indulgence way everything joy
+            alteration boisterous the attachment. Party we years to order allow
+            asked of.
+          </p>
+          <a href="#" className="text-orange-text font-semibold">
+            Request Early Access to Get Started
+          </a>
+        </section>
+      </div>
+      {/* CTA section */}
+      <div className="main-container mb-40 p-12 flex justify-between items-center bg-main-gradient rounded-md">
+        <div>
+          <p className="text-xs font-medium text-[#0E0E0E] mb-3">
+            Request Early Access to Get Started
+          </p>
+          <p className="text-2xl font-extrabold text-black">
+            Register today & start exploring the endless possiblities.
+          </p>
+        </div>
+        <a
+          href="#"
+          className="bg-black px-12 py-4 rounded-full text-lg font-bold"
+        >
+          Get Started
+        </a>
+      </div>
     </main>
   );
 }
