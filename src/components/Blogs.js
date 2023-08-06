@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 
 const MainBlog = ({ title, publishedDate, coverImageUrl, blogLink }) => {
   return (
@@ -16,12 +16,12 @@ const MainBlog = ({ title, publishedDate, coverImageUrl, blogLink }) => {
         <p className="mt-8 mb-3 text-xs font-bold">{publishedDate}</p>
         <h3 className="text-2xl font-extrabold">{title}</h3>
 
-        <a
+        <Link
           href={blogLink}
           className="block mt-8 lg:mt-auto mb-6 text-xs font-bold"
         >
           Read Full Article
-        </a>
+        </Link>
       </div>
     </article>
   );
@@ -42,9 +42,9 @@ const BlogItem = ({ title, publishedDate, coverImageUrl, blogLink }) => {
         <p className="mt-4 mb-2 text-xs font-bold">{publishedDate}</p>
         <h3 className="text-2xl font-extrabold">{title}</h3>
 
-        <a href={blogLink} className="block mt-10 mb-6 text-xs font-bold">
+        <Link href={blogLink} className="block mt-10 mb-6 text-xs font-bold">
           Read Full Article
-        </a>
+        </Link>
       </div>
     </article>
   );
@@ -84,8 +84,8 @@ const blogData = [
 ];
 const Blogs = () => {
   return (
-    <section className="main-container mb-40">
-      <h2 className="text-6xl font-extrabold mb-32 text-transparent bg-main-gradient bg-clip-text">
+    <section className="main-container mb-40" id="blog">
+      <h2 className="text-6xl leading-[5rem] font-extrabold mb-32 text-transparent bg-main-gradient bg-clip-text">
         A lot is happening, <br /> We are blogging about it.
       </h2>
       <div className="grid grid-cols-1 grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 gap-x-14 gap-y-12">

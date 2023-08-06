@@ -1,5 +1,6 @@
 import Blogs from "@/components/Blogs";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,7 +8,10 @@ export default function Home() {
       {/* Hero Section */}
       <div className="main-container pt-10 pb-24 lg:py-32 grid gap-y-10 grid-cols-1 lg:grid-cols-2">
         <section className="order-last lg:order-first">
-          <h1 className="bg-main-gradient bg-clip-text text-transparent font-extrabold text-6xl mb-8">
+          <h1
+            className="bg-main-gradient bg-clip-text text-transparent 
+          font-extrabold text-6xl mb-8 leading-[5rem]"
+          >
             Let’s Build Something amazing with GPT-3 OpenAI
           </h1>
           <p className="text-blue-text text-xl mb-9">
@@ -71,7 +75,7 @@ export default function Home() {
         </figure>
       </div>
       {/* What is GPT-3 */}
-      <div className="main-container mb-52 p-16 bg-blue-bg">
+      <div className="main-container mb-52 p-16 bg-blue-bg" id="what-is-gpt">
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-5">
           <h2 className="min-w-fit text-2xl font-extrabold grow">
             <span className="block h-1 w-10 bg-main-gradient mb-4"></span>
@@ -86,12 +90,12 @@ export default function Home() {
           </p>
         </section>
         <section className="flex flex-col lg:flex-row justify-between lg:items-center py-24 gap-y-6">
-          <h2 className="max-w-md text-4xl font-extrabold text-transparent bg-main-gradient bg-clip-text">
+          <h2 className="max-w-md text-4xl leading-[3rem] font-extrabold text-transparent bg-main-gradient bg-clip-text">
             The possibilities are beyond your imagination
           </h2>
-          <a href="#" className="font-medium text-orange-text">
+          <Link href="#" className="font-medium text-orange-text">
             Explore The Library
-          </a>
+          </Link>
         </section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-11 gap-y-12">
           <article>
@@ -127,15 +131,18 @@ export default function Home() {
         </div>
       </div>
       {/* Features section */}
-      <div className="main-container mb-32 grid grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-36">
+      <div
+        className="main-container mb-32 grid grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-36"
+        id="features"
+      >
         <section>
-          <h2 className="text-4xl font-extrabold text-transparent bg-main-gradient bg-clip-text mb-9">
+          <h2 className="text-4xl leading-[3rem] font-extrabold text-transparent bg-main-gradient bg-clip-text mb-9">
             The Future is Now and You Just Need To Realize It. Step into Future
             Today & Make it Happen.
           </h2>
-          <a href="#" className="text-orange-text font-medium">
+          <Link href="#" className="text-orange-text font-medium">
             Request Early Access to Get Started
-          </a>
+          </Link>
         </section>
         <div className="flex flex-col gap-y-14">
           <article className="flex justify-between gap-x-20">
@@ -182,8 +189,11 @@ export default function Home() {
           </article>
         </div>
       </div>
-      {/* Feature section */}
-      <div className="main-container mb-40 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-36">
+      {/* Open AI */}
+      <div
+        className="main-container mb-40 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-36"
+        id="open-ai"
+      >
         <figure className="relative min-h-[250px]">
           <Image
             src="/images/feature-img.jpg"
@@ -195,7 +205,7 @@ export default function Home() {
           <p className="block font-medium text-light-blue mb-3">
             Request Early Access to Get Started
           </p>
-          <h2 className="text-4xl mb-6 font-extrabold bg-main-gradient bg-clip-text text-transparent">
+          <h2 className="text-4xl leading-[3rem] mb-6 font-extrabold bg-main-gradient bg-clip-text text-transparent">
             The possibilities are beyond your imagination
           </h2>
           <p className="text-blue-text mb-8">
@@ -204,9 +214,9 @@ export default function Home() {
             alteration boisterous the attachment. Party we years to order allow
             asked of.
           </p>
-          <a href="#" className="text-orange-text font-semibold">
+          <Link href="#" className="text-orange-text font-medium">
             Request Early Access to Get Started
-          </a>
+          </Link>
         </section>
       </div>
       {/* CTA section */}
@@ -219,13 +229,13 @@ export default function Home() {
             Register today & start exploring the endless possiblities.
           </p>
         </div>
-        <a
+        <Link
           href="#"
           className=" bg-black hover:no-underline px-12 py-4 rounded-full text-lg font-bold
           hover:bg-white hover:text-primary transition-colors duration-500"
         >
           Get Started
-        </a>
+        </Link>
       </div>
       <Blogs />
     </main>
