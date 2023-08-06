@@ -8,9 +8,9 @@ const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   return (
     <header className="main-container relative pt-8 lg:pt-16 flex items-center">
-      <a href="/" className="relative h-4 w-16 mr-16">
+      <Link href="/" className="relative h-4 w-16 mr-16">
         <Image src="/images/logo.svg" fill={true} />
-      </a>
+      </Link>
 
       <button
         className="text-primary ml-auto lg:hidden"

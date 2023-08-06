@@ -17,16 +17,15 @@ const Footer = () => {
         </Link>
       </section>
       <div className="grid grid-cols-12">
-        {/* Fix the gaps */}
         <div className="col-span-12 lg:col-span-6">
-          <figure className="relative h-8 w-28 mb-6">
+          <Link href="/" className="relative inline-block h-8 w-28 mb-6">
             <Image src="/images/logo.svg" fill={true} />
-          </figure>
+          </Link>
           <p className="text-xs">
             Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved
           </p>
         </div>
-        <div className="col-span-6 mt-14 lg:col-span-2">
+        <div className="col-span-6 mt-14 lg:mt-0 lg:col-span-2">
           <h4 className="text-sm mb-9 font-bold">Links</h4>
           <ul className="flex flex-col gap-y-7 text-xs font-medium">
             <li>
@@ -43,7 +42,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-span-6 mt-14 lg:col-span-2">
+        <div className="col-span-6 mt-14 lg:mt-0 lg:col-span-2">
           <h4 className="text-sm mb-9 font-bold">Company</h4>
           <ul className="flex flex-col gap-y-7 text-xs font-medium">
             <li>
@@ -57,7 +56,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-span-6 mt-14 lg:col-span-2">
+        <div className="col-span-6 mt-14 lg:mt-0 lg:col-span-2">
           <h4 className="text-sm mb-9 font-bold">Get in touch</h4>
           <ul className="flex flex-col gap-y-7 text-xs font-medium">
             <li>
