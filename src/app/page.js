@@ -1,4 +1,5 @@
 import Blogs from "@/components/Blogs";
+import EmailInput from "@/components/EmailInput";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,8 +7,8 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <div className="main-container pt-10 pb-24 lg:py-32 grid gap-y-10 grid-cols-1 lg:grid-cols-2">
-        <section className="order-last lg:order-first">
+      <div className="main-container pt-10 pb-24 lg:py-32 grid gap-y-10 gap-x-10 grid-cols-1 lg:grid-cols-12">
+        <section className="order-last lg:order-first lg:col-span-7">
           <h1
             className="bg-main-gradient bg-clip-text text-transparent 
           font-extrabold text-6xl mb-8 leading-[5rem]"
@@ -20,21 +21,7 @@ export default function Home() {
             alteration boisterous the attachment. Party we years to order allow
             asked of.
           </p>
-          <form action="#" className="flex mb-9">
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              required
-              className="bg-dark-blue rounded-none rounded-t-md rounded-l-md lg:grow outline-none px-6 py-4 lg:px-8 lg:py-6 lg:text-xl"
-            />
-            <button
-              type="submit"
-              className="bg-primary text-xl rounded-none rounded-r-md font-bold text-white px-6 py-4 lg:px-9 lg:py-5
-              hover:bg-white hover:text-primary transition-colors duration-500"
-            >
-              Get Started
-            </button>
-          </form>
+          <EmailInput />
           <div className="flex items-center gap-x-9">
             <div className="relative w-40 h-10">
               <Image
@@ -48,7 +35,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <figure className="relative min-h-[250px]">
+        <figure className="relative min-h-[250px] lg:col-span-5">
           <Image
             src="/images/hero-img.jpg"
             fill={true}
