@@ -1,15 +1,16 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   return (
     <header className="main-container relative pt-8 lg:pt-16 flex items-center">
-      <a href="/" className="relative h-4 w-16 mr-16">
+      <Link href="/" className="relative h-4 w-16 mr-16">
         <Image src="/images/logo.svg" fill={true} />
-      </a>
+      </Link>
 
       <button
         className="text-primary ml-auto lg:hidden"
@@ -29,32 +30,33 @@ const Header = () => {
       >
         <ul className="flex flex-col lg:flex-row lg:items-center gap-y-5 gap-x-9">
           <li>
-            <a href="#">Home</a>
+            <Link href="#">Home</Link>
           </li>
           <li>
-            <a href="#">What is GPT?</a>
+            <Link href="#what-is-gpt">What is GPT?</Link>
           </li>
           <li>
-            <a href="#">Open AI</a>
+            <Link href="#features">Features</Link>
           </li>
           <li>
-            <a href="#">Case Studies</a>
+            <Link href="#open-ai">Open AI</Link>
           </li>
           <li>
-            <a href="#">Library</a>
+            <Link href="#blog">Blog</Link>
           </li>
         </ul>
         <ul className="flex flex-col lg:flex-row lg:items-center lg:ml-auto gap-y-5 gap-x-6 ">
           <li>
-            <a href="#">Sign in</a>
+            <Link href="#">Sign in</Link>
           </li>
           <li>
-            <a
+            <Link
               href="#"
-              className="inline-block py-4 px-10 bg-primary hover:no-underline rounded-md"
+              className="inline-block py-4 px-10 bg-primary hover:no-underline rounded-md 
+               hover:bg-white hover:text-primary transition-colors duration-500"
             >
               Sign up
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
